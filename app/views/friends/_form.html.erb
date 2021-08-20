@@ -10,33 +10,38 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label"><%= form.label :first_name %></label>
+    <div class="col-sm-10">
+      <%= form.text_field :first_name, class:"form-control", placeholder:"Mike" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label"><%= form.label :last_name %></label>
+    <div class="col-sm-10">
+      <%= form.text_field :last_name, class:"form-control", placeholder:"Chang" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label"><%= form.label :email %></label>
+    <div class="col-sm-10">
+      <%= form.text_field :email, class:"form-control", placeholder:"mike@gmail.com" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone %>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label"><%= form.label :phone %></label>
+    <div class="col-sm-10">
+      <%= form.text_field :phone, class:"form-control", placeholder:"+60178280939" %>
+    </div>
   </div>
-
-  <div class="field">
-    <%= form.label :twitter %>
-    <%= form.text_field :twitter %>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label"><%= form.label :twitter %></label>
+    <div class="col-sm-10">
+      <%= form.text_field :twitter, class:"form-control", placeholder:"@mikechang" %>
+    </div>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:'btn btn-secondary' %>
   </div>
 <% end %>
